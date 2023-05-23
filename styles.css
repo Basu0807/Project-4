@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ background-color: #3D087B;
+ font-family: 'Inter', sans-serif;
+}
+.digitalclock{
+    display: flex;
+    justify-content: center;
+}
+
+.clocklogo{
+    position: relative;
+    right: 20px;
+   height: 60px;
+   width: 170px;
+   margin: 20px;
+}
+
+
+
+.settime{
+    height: 300px;
+    width: 500px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.routine{
+    display: flex;
+    
+    color: #3D087B;
+}
+
+.timetext{
+    padding: 5px 80px 5px 15px;
+}
+
+.timetext1{
+    padding: 5px 100px 5px 15px;
+}
+.timetext2{
+    padding: 5px 113px 5px 15px;
+}
+.timetext3{
+    padding: 5px 105px 5px 15px;
+}
+
+.time{
+    height: 30px;
+    width: 200px;
+    color: #3D087B;
+    text-decoration: none;
+    border: 1px solid #EDEDED;
+}
+
+.line{
+    width: 2px;
+    height: 30px;
+    background-color: #C2C2C2;
+    position: relative;
+    left: 12px;
+    margin: 5px;
+}
+
+.message{
+    height: 50px;
+    width: 500px;
+    background-color: #6948a3;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 22px ;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 12px 12px;
+}
+
+.alarmbox{
+    display: flex;
+}
+
+.setalarm{
+    height: 50px;
+    width: 260px;
+    background-image: linear-gradient(113deg, #6E54EC, #CB52F8, #FC5EFF, #F1A7C5);
+    position: relative;
+    top: 10px;
+    color: #FFFFFF;
+    padding: 10px   ;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.timedetail{
+    height: 80px ;
+    width: 230px;
+    background-color: #6948a3;
+    color: #F25CFE;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+
+
+.timebox{
+    height: 80px;
+    width: 460px;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+
+
+.box{
+    color: #8A11BF;
+    background-image: url(./timeline.svg);
+    height:60px ;
+    width: 90px;
+    padding: 5px;
+    text-align: center;
+    
+    
+}
+.box1{
+    color: #3D087B;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.colon{
+   font-size: 25px;
+    margin-top: 12px;
+}
+
+.timenumber{
+    font-size: 25px;
+    
+}
+
+.am{
+    
+    font-size: 30px;
+    padding: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: 12px;
+    background-image: url(./AM_svg.svg);
+}
+
+.timebox1{
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    opacity: 80%;
+    position: absolute;
+    top: 70px;
+    right: 170px;
+    z-index: 2;
+}
+.timebox2{
+    height: 50px;
+    width: 340px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    opacity: 22%;
+    position: absolute;
+    top: 80px;
+    right: 200px;
+    z-index: 1;
+}
+
+.display{
+    background-color: #FFFFFF;
+    color: #8E53F0;
+    height: 75px;
+    width: 460px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    left: 20px;
+    border-radius: 5px;
+    
+}
+
+.displayimage{
+    height: 300px;
+    width: 460px;
+    position: relative;
+    top: 35px;
+    left: 10px;
+
+}
+
+.footerline{
+    position:absolute;
+    bottom: 15px;
+    right: 20px;
+    color: #B85EBF;
+}
