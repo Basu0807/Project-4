@@ -1,222 +1,342 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
- background-color: #3D087B;
- font-family: 'Inter', sans-serif;
+body {
+  background-color: #3d087b;
+  font-family: "Inter", sans-serif;
 }
-.digitalclock{
+.digitalclock {
+  display: flex;
+  justify-content: center;
+}
+
+.clocklogo {
+  position: relative;
+  right: 20px;
+  height: 60px;
+  width: 170px;
+  margin: 20px;
+}
+
+.settime {
+  height: 300px;
+  width: 500px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.routine {
+  display: flex;
+  color: #3d087b;
+}
+
+.timetext {
+  padding: 5px 80px 5px 15px;
+}
+
+.timetext1 {
+  padding: 5px 100px 5px 15px;
+}
+.timetext2 {
+  padding: 5px 113px 5px 15px;
+}
+.timetext3 {
+  padding: 5px 105px 5px 15px;
+}
+
+.time {
+  height: 30px;
+  width: 200px;
+  color: #3d087b;
+  text-decoration: none;
+  border: 1px solid #ededed;
+}
+
+.line {
+  width: 2px;
+  height: 30px;
+  background-color: #c2c2c2;
+  position: relative;
+  left: 12px;
+  margin: 5px;
+}
+
+.message {
+  height: 50px;
+  width: 500px;
+  background-color: #6948a3;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 12px 12px;
+}
+
+.alarmbox {
+  display: flex;
+}
+
+.setalarm {
+  height: 50px;
+  width: 260px;
+  background-image: linear-gradient(113deg, #6e54ec, #cb52f8, #fc5eff, #f1a7c5);
+  position: relative;
+  top: 10px;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.timedetail {
+  height: 80px;
+  width: 230px;
+  background-color: #6948a3;
+  color: #f25cfe;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+
+.timebox {
+  height: 80px;
+  width: 460px;
+  padding: 10px;
+  position: relative;
+  top: 30px;
+  left: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+.box {
+  color: #8a11bf;
+  background-image: url(./timeline.svg);
+  height: 60px;
+  width: 90px;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+.box1 {
+  color: #3d087b;
+  font-weight: bold;
+  background-color: #ffffff;
+  padding: 20px;
+}
+.colon {
+  font-size: 25px;
+  margin-top: 12px;
+}
+
+.AM {
+  font-size: 30px;
+  padding: 12px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 12px;
+  background-image: url(./AM_svg.svg);
+}
+
+.timebox1 {
+  height: 50px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  opacity: 80%;
+  position: absolute;
+  top: 70px;
+  right: 170px;
+  z-index: 2;
+}
+.timebox2 {
+  height: 50px;
+  width: 340px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  opacity: 22%;
+  position: absolute;
+  top: 80px;
+  right: 200px;
+  z-index: 1;
+}
+
+.display {
+  background-color: #ffffff;
+  color: #8e53f0;
+  height: 75px;
+  width: 450px;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  left: 20px;
+  border-radius: 5px;
+}
+
+.displayimage {
+  height: 300px;
+  width: 460px;
+  position: relative;
+  top: 75px;
+  left: 20px;
+}
+
+.footerline {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  color: #b85ebf;
+}
+
+@media (min-width: 280px) and (max-width: 500px) {
+  .digitalclock {
+    display: block;
+    justify-content: center;
+  }
+
+  .clocklogo {
+    position: relative;
+    right: 2px;
+   
+  }
+
+  .timebox {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    width: 400px;
     display: flex;
     justify-content: center;
-}
+  }
 
-.clocklogo{
-    position: relative;
-    right: 20px;
-   height: 60px;
-   width: 170px;
-   margin: 20px;
-}
-
-
-
-.settime{
-    height: 300px;
-    width: 500px;
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    padding: 20px;
-    margin-top: 10px;
-}
-
-.routine{
-    display: flex;
-    
-    color: #3D087B;
-}
-
-.timetext{
-    padding: 5px 80px 5px 15px;
-}
-
-.timetext1{
-    padding: 5px 100px 5px 15px;
-}
-.timetext2{
-    padding: 5px 113px 5px 15px;
-}
-.timetext3{
-    padding: 5px 105px 5px 15px;
-}
-
-.time{
-    height: 30px;
-    width: 200px;
-    color: #3D087B;
-    text-decoration: none;
-    border: 1px solid #EDEDED;
-}
-
-.line{
-    width: 2px;
-    height: 30px;
-    background-color: #C2C2C2;
-    position: relative;
-    left: 12px;
-    margin: 5px;
-}
-
-.message{
-    height: 50px;
-    width: 500px;
-    background-color: #6948a3;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 22px ;
-    border-radius: 5px;
-    margin-top: 10px;
-    padding: 12px 12px;
-}
-
-.alarmbox{
-    display: flex;
-}
-
-.setalarm{
-    height: 50px;
-    width: 260px;
-    background-image: linear-gradient(113deg, #6E54EC, #CB52F8, #FC5EFF, #F1A7C5);
-    position: relative;
-    top: 10px;
-    color: #FFFFFF;
-    padding: 10px   ;
-    text-align: center;
-    font-size: 20px;
-    border-radius: 5px;
-}
-
-.timedetail{
-    height: 80px ;
-    width: 230px;
-    background-color: #6948a3;
-    color: #F25CFE;
-    font-size: 13px;
-    padding: 10px;
-    border-radius: 5px;
-    position: relative;
-    left: 10px;
-    top: 10px;
-}
-
-
-
-.timebox{
-    height: 80px;
-    width: 460px;
-    padding: 10px;
-    position: relative;
-    top: 30px;
-    left: 20px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #FFFFFF;
-    border: 1px solid #EDEDED;
-    border-radius: 5px;
-    z-index: 3;
-}
-
-
-
-.box{
-    color: #8A11BF;
-    background-image: url(./timeline.svg);
-    height:60px ;
-    width: 90px;
-    padding: 5px;
-    text-align: center;
-    
-    
-}
-.box1{
-    color: #3D087B;
-    font-weight: bold;
-    background-color: #FFFFFF;
-    padding: 20px;
-}
-.colon{
-   font-size: 25px;
-    margin-top: 12px;
-}
-
-.timenumber{
-    font-size: 25px;
-    
-}
-
-.am{
-    
-    font-size: 30px;
-    padding: 12px;
-    color: #FFFFFF;
-    text-align: center;
-    margin-left: 12px;
-    background-image: url(./AM_svg.svg);
-}
-
-.timebox1{
-    height: 50px;
+  .timebox1 {
+    position: absolute;
+    width: 350px;
+    top: 130px;
+    left: 45px;
+  }
+  .timebox2 {
+    position: absolute;
+    top: 140px;
+    left: 75px;
+    width: 300px;
+  }
+  .display {
     width: 400px;
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    opacity: 80%;
+     font-size: 18px;
     position: absolute;
-    top: 70px;
-    right: 170px;
-    z-index: 2;
-}
-.timebox2{
-    height: 50px;
-    width: 340px;
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    opacity: 22%;
-    position: absolute;
-    top: 80px;
-    right: 200px;
-    z-index: 1;
-}
-
-.display{
-    background-color: #FFFFFF;
-    color: #8E53F0;
-    height: 75px;
-    width: 460px;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 25px;
-    text-align: center;
+    top: 200px;
+  }
+  .settime {
     position: relative;
-    top: 60px;
+    top: 180px;
     left: 20px;
-    border-radius: 5px;
-    
-}
+    width: 400px;
+    height: 340px;
+  }
 
-.displayimage{
-    height: 300px;
-    width: 460px;
+  .displayimage {
+    width: 400px;
     position: relative;
-    top: 35px;
-    left: 10px;
+    top: 50px;
+  }
+  .message {
+    width: 400px;
+    position: relative;
+    top: 460px;
+    left: 20px;
+  }
 
+  .setalarm {
+    width: 200px;
+    position: absolute;
+    top: 61rem;
+    left: 20px;
+  }
+
+  .timedetail {
+    height: 70px;
+    width: 175px;
+    font-size: 12px;
+    padding: 6px;
+    position: relative;
+    left: 240px;
+    top: 29rem;
+  }
 }
 
-.footerline{
-    position:absolute;
-    bottom: 15px;
-    right: 20px;
-    color: #B85EBF;
+@media (min-width: 500px) and (max-width: 900px)
+{
+
+    .clocklogo {
+        left: 85px;
+        position: relative;
+    }
+
+    .timebox{
+        
+        width: 390px;
+        left: 55px;
+        
+    }
+    .timebox1{
+        position: relative;
+        width: 350px;
+        left: 75px;
+        top: -10px;
+        
+    }
+    .timebox2{
+       
+        width: 300px;
+        
+        right: -30px;
+       
+        
+       
+    }
+    .settime{
+        height: 340px;
+        width: 400px;
+        position: relative;
+        left: 110px;
+        
+    }
+    .message {
+        
+        width: 395px;
+        position: relative;
+        left: 110px;
+    }
+
+    .setalarm{
+        left: 110px;
+    }
+
+    .display {   
+        width: 390px;
+        padding: 10px;
+        top: 20px;
+        left: 55px;
+        
+       
+      }
+        
 }
