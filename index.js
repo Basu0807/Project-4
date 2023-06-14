@@ -28,6 +28,22 @@ function getTime(){
     
 
     let msg1= document.querySelectorAll(".display")
+
+    let newtime= new Date()
+    let hh= newtime.getHours();
+
+    if( hh>=12 && hh<15){
+      msg1[0].innerText = "LET'S HAVE SOME LUNCH !!"
+      } 
+   else if(hh>= 16 && hh < 20){
+      msg1[0].innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!"
+  }
+   else if(hh >= 20 && hh < 6){
+      msg1[0].innerText = "CLOSE YOUR EYES AND GO TO SLEEP"
+  }
+  else if(hh>=6 && hh<12){
+    msg1[0].innerText = "GRAB SOME HEALTHY BREAKFAST!!!"
+  }
             //  if(HH>=6 && HH < 17){
             //     msg1[0].innerText = "LET'S HAVE SOME LUNCH !!"
             //     } 
