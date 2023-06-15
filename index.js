@@ -41,28 +41,13 @@ function getTime(){
    else if(hh >= 20 && hh < 6){
       msg1[0].innerText = "CLOSE YOUR EYES AND GO TO SLEEP"
   }
+  else if(hh=0){
+    msg1[0].innerText = "CLOSE YOUR EYES AND GO TO SLEEP"
+}
   else if(hh>=6 && hh<12){
     msg1[0].innerText = "GRAB SOME HEALTHY BREAKFAST!!!"
   }
-            //  if(HH>=6 && HH < 17){
-            //     msg1[0].innerText = "LET'S HAVE SOME LUNCH !!"
-            //     } 
-            //  if(HH >= 17 && HH < 19){
-            //     msg1[0].innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!"
-            // }
-            //  if(HH >= 19 && HH < 6){
-            //     msg1[0].innerText = "CLOSE YOUR EYES AND GO TO SLEEP"
-            // }
-
-            if (HH >= 6 && HH < 12) {
-                msg1[0].innerText = "GRAB SOME HEALTHY BREAKFAST!!!";
-              } else if (HH >= 1 && HH < 3) {
-                msg1[0].innerText = "LET'S HAVE SOME LUNCH !!";
-              } else if (HH >= 3 && HH < 7) {
-                msg1[0].innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
-              } else {
-                msg1[0].innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP";
-              }
+           
     setTimeout(getTime, 1000);
 }
 getTime();
