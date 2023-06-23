@@ -28,20 +28,22 @@ function getTime(){
     
 
     let msg1= document.querySelectorAll(".display")
+    
 
     let newtime= new Date()
     let hh= newtime.getHours();
+    
 
     if( hh>=12 && hh<15){
       msg1[0].innerText = "LET'S HAVE SOME LUNCH !!"
       } 
-   else if(hh>= 16 && hh < 20){
+   else if(hh>= 16 && hh<20){
       msg1[0].innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!"
   }
-   else if(hh >= 20 && hh < 6){
+   else if(hh>= 20 && hh<=23){
       msg1[0].innerText = "CLOSE YOUR EYES AND GO TO SLEEP"
   }
-  else if(hh=0){
+  else if(hh>=0 && hh<6){
     msg1[0].innerText = "CLOSE YOUR EYES AND GO TO SLEEP"
 }
   else if(hh>=6 && hh<12){
@@ -67,12 +69,15 @@ function execute(){
    document.getElementById("txtval1").innerText = output1
 
    let msg2=document.querySelectorAll(".message")
-   let picture=document.querySelectorAll(".displayimage")
+   let picture=document.querySelector(".image1")
+   let new1 = picture.querySelector(".displayimage")
+
+   
    
    
     if(parseInt(drop1.value)==hour){
     msg2[0].innerHTML="GOOD MORNING!! WAKEUP!!"
-    picture[0].src="./Component 30 – 1.svg"}
+    new1.src="./Component 30 – 1.svg"}
     
     
 
@@ -82,7 +87,7 @@ function execute(){
     
     if(parseInt(drop2.value)==hour){
     msg2[0].innerHTML="GOOD AFTERNOON!! TAKE SOME SLEEP!!"
-    picture[0].src="./afternoon.svg"}
+    new1.src="./afternoon.svg"}
 
     let drop3 = document.getElementsByClassName("time")[2]
     let output3 = drop3.options[drop3.selectedIndex].innerText
@@ -90,7 +95,7 @@ function execute(){
     
     if(parseInt(drop3.value)==hour){
     msg2[0].innerHTML="GOOD EVENING!!"
-    picture[0].src="./goodeveningtea.png"}
+    new1.src="./goodeveningtea.png"}
 
     let drop4 = document.getElementsByClassName("time")[3]
     let output4 = drop4.options[drop4.selectedIndex].innerText
@@ -98,7 +103,7 @@ function execute(){
     
     if(parseInt(drop4.value)==hour){
     msg2[0].innerHTML="GOOD NIGHT!!"
-    picture[0].src="./Group 5194.png"}
+    new1.src="./Group 5194.png"}
 }
 
 // if (hours > 12) {
