@@ -77,7 +77,7 @@ function execute(){
    
     if(parseInt(drop1.value)==hour){
     msg2[0].innerHTML="GOOD MORNING!! WAKEUP!!"
-    new1.src="./Component 30 – 1.svg"}
+    new1.src="./GOODMORNING"}
     
     
 
@@ -87,7 +87,7 @@ function execute(){
     
     if(parseInt(drop2.value)==hour){
     msg2[0].innerHTML="GOOD AFTERNOON!! TAKE SOME SLEEP!!"
-    new1.src="./afternoon.svg"}
+    new1.src="./AFTERNOON.jpg"}
 
     let drop3 = document.getElementsByClassName("time")[2]
     let output3 = drop3.options[drop3.selectedIndex].innerText
@@ -95,7 +95,7 @@ function execute(){
     
     if(parseInt(drop3.value)==hour){
     msg2[0].innerHTML="GOOD EVENING!!"
-    new1.src="./goodeveningtea.png"}
+    new1.src="./GOODEVENINGTEA.jpg"}
 
     let drop4 = document.getElementsByClassName("time")[3]
     let output4 = drop4.options[drop4.selectedIndex].innerText
@@ -103,7 +103,7 @@ function execute(){
     
     if(parseInt(drop4.value)==hour){
     msg2[0].innerHTML="GOOD NIGHT!!"
-    new1.src="./Group 5194.png"}
+    new1.src="./GOODNIGHT.jpg"}
 }
 
 // if (hours > 12) {

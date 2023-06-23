@@ -240,7 +240,7 @@ body {
   }
   .display {
     width: 350px;
-     font-size: 18px;
+    font-size: 18px;
     position: absolute;
     top: 200px;
     left: 13px;
@@ -254,9 +254,10 @@ body {
   }
 
   .displayimage {
+    height: 200px;
     width: 350px;
     position: relative;
-    top: 20px;
+    top: 65px;
     left: 13px;
   }
   .message {
@@ -264,6 +265,7 @@ body {
     position: relative;
     top: 410px;
     left: 13px;
+    font-size: 15px;
   }
 
   .setalarm {
