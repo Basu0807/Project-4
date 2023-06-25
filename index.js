@@ -77,7 +77,7 @@ function execute(){
    
     if(parseInt(drop1.value)==hour){
     msg2[0].innerHTML="GOOD MORNING!! WAKEUP!!"
-    new1.src="./GOODMORNING"}
+    new1.src="./GOODMORNING.jpg"}
     
     
 
