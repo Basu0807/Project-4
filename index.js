@@ -37,7 +37,7 @@ function getTime(){
     if( hh>=12 && hh<15){
       msg1[0].innerText = "LET'S HAVE SOME LUNCH !!"
       } 
-   else if(hh>= 16 && hh<20){
+   else if(hh>= 15 && hh<20){
       msg1[0].innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!"
   }
    else if(hh>= 20 && hh<=23){
